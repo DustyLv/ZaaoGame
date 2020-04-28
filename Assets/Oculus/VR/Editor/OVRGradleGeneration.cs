@@ -201,7 +201,9 @@ public class OVRGradleGeneration
 					string attr = e.GetAttribute("name", androidNamepsaceURI);
 					if (attr == "android.intent.category.LAUNCHER")
 					{
-						e.SetAttribute("name", androidNamepsaceURI, "android.intent.category.INFO");
+						//TODO: THIS IS JUST A NOT
+						//e.SetAttribute("name", androidNamepsaceURI, "android.intent.category.INFO");
+						e.SetAttribute("name", androidNamepsaceURI, "android.intent.category.LAUNCHER");
 					}
 				}
 

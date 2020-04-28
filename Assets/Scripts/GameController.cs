@@ -44,10 +44,12 @@ public class GameController : MonoBehaviour
         ResetScene();
         ToggleMainMenuUI(false);
         ToggleGameUI(true);
+        m_GameStarted = true;
     }
 
     public void StopGame()
     {
+        m_GameStarted = false;
         ToggleGameUI(false);
         ToggleMainMenuUI(true);
     }

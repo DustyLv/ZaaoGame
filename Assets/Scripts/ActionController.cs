@@ -7,6 +7,7 @@ using DG.Tweening;
 public class ActionController : MonoBehaviour
 {
     public Transform m_RaycastOrigin;
+    public float m_RaycastLength = 10f;
     //private bool m_HasGameInteractable = false;
 
     public LayerMask m_InteractableLayerMask = -1;
@@ -59,23 +60,32 @@ public class ActionController : MonoBehaviour
 
     void FixedUpdate()
     {
-        RaycastHit hitInteractable;
-        if (Physics.Raycast(m_RaycastOrigin.position, m_RaycastOrigin.TransformDirection(Vector3.forward), out hitInteractable, Mathf.Infinity, m_InteractableLayerMask))
+        
+        if (GameController.instance.m_GameStarted == true)
         {
-            m_CurrentPickupState = PickupState.Hovering;
-
-            if (m_UserButtonPressed)
+            RaycastHit hitInteractable;
+            if (Physics.Raycast(m_RaycastOrigin.position, m_RaycastOrigin.TransformDirection(Vector3.forward), out hitInteractable, m_RaycastLength, m_InteractableLayerMask))
             {
-                if (m_CurrentInteractableObject == null) { m_CurrentInteractableObject = hitInteractable.collider.GetComponent<InteractableObject>(); }
+                m_CurrentPickupState = PickupState.Hovering;
+
+                if (m_UserButtonPressed)
+                {
+                    if (m_CurrentInteractableObject == null) { m_CurrentInteractableObject = hitInteractable.collider.GetComponent<InteractableObject>(); }
+                }
             }
-        }
-        else
-        {
-            m_CurrentPickupState = PickupState.Normal;
+            else
+            {
+                m_CurrentPickupState = PickupState.Normal;
+            }
+
+            //if (!m_UserButtonPressed)
+            //{
+            //    m_PickupPoint.localPosition = new Vector3(0f, 0f, hitInteractable.distance);
+            //}
         }
 
         RaycastHit hitUI;
-        if (Physics.Raycast(m_RaycastOrigin.position, m_RaycastOrigin.TransformDirection(Vector3.forward), out hitUI, Mathf.Infinity, m_UIInteractableLayerMask))
+        if (Physics.Raycast(m_RaycastOrigin.position, m_RaycastOrigin.TransformDirection(Vector3.forward), out hitUI, m_RaycastLength, m_UIInteractableLayerMask))
         {
             m_CurrentPickupState = PickupState.Hovering;
 
@@ -108,28 +118,31 @@ public class ActionController : MonoBehaviour
             }
         }
 
-        RaycastHit hitTrashBin;
-        if (Physics.Raycast(m_RaycastOrigin.position, m_RaycastOrigin.TransformDirection(Vector3.forward), out hitTrashBin, Mathf.Infinity, m_TrashBinLayerMask))
+        if (GameController.instance.m_GameStarted == true)
         {
-            if(m_CurrentTrashBin == null)
+            RaycastHit hitTrashBin;
+            if (Physics.Raycast(m_RaycastOrigin.position, m_RaycastOrigin.TransformDirection(Vector3.forward), out hitTrashBin, m_RaycastLength, m_TrashBinLayerMask))
             {
-                m_CurrentTrashBin = hitTrashBin.collider.GetComponent<TrashBin>();
+                if (m_CurrentTrashBin == null)
+                {
+                    m_CurrentTrashBin = hitTrashBin.collider.GetComponent<TrashBin>();
+                }
+                if (m_CurrentTrashBin != null)
+                {
+                    m_CurrentTrashBin.OpenLid();
+                }
             }
-            m_CurrentTrashBin.OpenLid();
-        }
-        else
-        {
-            if(m_CurrentTrashBin != null)
+            else
             {
-                m_CurrentTrashBin.CloseLid();
-                m_CurrentTrashBin = null;
+                if (m_CurrentTrashBin != null)
+                {
+                    m_CurrentTrashBin.CloseLid();
+                    m_CurrentTrashBin = null;
+                }
             }
         }
 
-        if (!m_UserButtonPressed)
-        {
-            m_PickupPoint.localPosition = new Vector3(0f, 0f, hitInteractable.distance);
-        }
+
 
     }
 

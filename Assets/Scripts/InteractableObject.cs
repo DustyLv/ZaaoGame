@@ -14,6 +14,7 @@ public class InteractableObject : MonoBehaviour
 
     public BinType m_TargetBin = BinType.Green;
     public float m_AnimationLength = 1f;
+    public GameObject m_Shadow;
 
     void Start()
     {
@@ -26,7 +27,10 @@ public class InteractableObject : MonoBehaviour
     {
         if(m_IsPickedUp && m_Parent != null)
         {
-            transform.DOMove(m_Parent.position, 0.1f);
+            transform.DOMove(m_Parent.position, 0.1f).OnStart(() =>
+            {
+                transform.DORotate(Vector3.zero, 0.3f);
+            });
         }
     }
 
@@ -34,6 +38,10 @@ public class InteractableObject : MonoBehaviour
     {
         m_IsPickedUp = true;
         m_Parent = _pickupPoint;
+        if (m_Shadow != null)
+        {
+            m_Shadow.SetActive(false);
+        }
     }
 
     public void Drop(TrashBin _targetBin)
@@ -63,7 +71,16 @@ public class InteractableObject : MonoBehaviour
     {
         m_IsPickedUp = false;
         m_Parent = null;
-        transform.DOMove(m_InitialPosition, m_AnimationLength);
+        transform.DOMove(m_InitialPosition, m_AnimationLength).OnStart(() =>
+        {
+            transform.DORotateQuaternion(m_InitialRotation, m_AnimationLength * 0.5f);
+        }).OnComplete(() =>
+        {
+            if (m_Shadow != null)
+            {
+                m_Shadow.SetActive(true);
+            }
+        });
     }
 
     public void ResetObject()
@@ -72,5 +89,9 @@ public class InteractableObject : MonoBehaviour
         transform.position = m_InitialPosition;
         transform.rotation = m_InitialRotation;
         transform.localScale = m_InitialScale;
+        if (m_Shadow != null)
+        {
+            m_Shadow.SetActive(true);
+        }
     }
 }
