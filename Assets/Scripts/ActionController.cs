@@ -163,6 +163,7 @@ public class ActionController : MonoBehaviour
                 m_WrongBinImage.DOKill();
                 m_WrongBinImage.DOFade(1f, 0.15f).OnStart(() =>
                 {
+                    SoundController.instance.PlayOneShot("Error");
                     m_WrongBinImage.transform.localScale = Vector3.zero;
                     m_WrongBinImage.transform.DOScale(Vector3.one * 1.5f, 0.75f).SetEase(Ease.OutBack);
                 }).OnComplete(() =>

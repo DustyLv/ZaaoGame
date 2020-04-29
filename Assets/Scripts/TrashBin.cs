@@ -19,6 +19,7 @@ public class TrashBin : MonoBehaviour
         if (m_IsOpen == false && GameController.instance.m_GameStarted)
         {
             m_LidBone.DOKill();
+            SoundController.instance.PlayOneShot("LidOpen");
             m_LidBone.DOLocalRotateQuaternion(Quaternion.AngleAxis(m_LidOpenAngle, -m_LidBone.right), 0.5f);
             m_IsOpen = true;
         }
@@ -29,6 +30,7 @@ public class TrashBin : MonoBehaviour
         if (m_IsOpen == true && m_TransferInProgress == false && GameController.instance.m_GameStarted)
         {
             m_LidBone.DOKill();
+            SoundController.instance.PlayOneShot("LidClose");
             m_LidBone.DOLocalRotateQuaternion(Quaternion.AngleAxis(m_LidClosedAngle, -m_LidBone.right), 0.5f);
             m_IsOpen = false;
         }

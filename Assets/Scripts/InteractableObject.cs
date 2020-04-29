@@ -56,6 +56,7 @@ public class InteractableObject : MonoBehaviour
         {
             transform.DOBlendableLocalMoveBy(-Vector3.up, m_AnimationLength * 0.5f).OnStart(()=> 
             {
+                SoundController.instance.PlayOneShot("TrashThrow");
                 transform.DOScale(0f, 0.5f);
             }).OnComplete(() =>
             {

@@ -21,6 +21,7 @@ public class GameScoreController : MonoBehaviour
     public List<HighscoreEntry> m_HighscoreEntries;
     public Color m_HighscoreBaseColor;
     public Color m_HighscorePlayerColor;
+    public TextMeshProUGUI m_PlayerTime;
 
     public CanvasGroup m_ScoreContainer;
     public TextMeshProUGUI m_ScoreOutput;
@@ -124,6 +125,7 @@ public class GameScoreController : MonoBehaviour
     IEnumerator DoGameEnd()
     {
         GameController.instance.m_GameStarted = false;
+        m_PlayerTime.text = string.Format("{0}:{1:00}", m_Seconds / 60, m_Seconds % 60);
 
         m_ScoreContainer.alpha = 0f;
 
