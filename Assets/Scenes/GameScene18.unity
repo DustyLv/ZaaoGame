@@ -348,15 +348,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8baa0c0a7d177d548a65e630fe560f98, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8baa0c0a7d177d548a65e630fe560f98, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8baa0c0a7d177d548a65e630fe560f98, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 8baa0c0a7d177d548a65e630fe560f98, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -755,10 +755,10 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Latvian
-    Text: "Plastmasas izstr\u0101d\u0101jumi, p\u0101rtikas iesai\u0146ojumi, keramika"
+    Text: "Ne\u0161\u0137iroti sadz\u012Bves atkritumi"
     Object: {fileID: 0}
   - Language: English
-    Text: Plastic products, food packaging, ceramics
+    Text: Unsorted household waste
     Object: {fileID: 0}
 --- !u!1 &326535992
 GameObject:
@@ -1239,15 +1239,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f8a1bb376eafa34e8ff342b0dc998ad, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f8a1bb376eafa34e8ff342b0dc998ad, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f8a1bb376eafa34e8ff342b0dc998ad, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9f8a1bb376eafa34e8ff342b0dc998ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1455,15 +1455,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3be62b76d481a064a9ed4ab1885d0664, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3be62b76d481a064a9ed4ab1885d0664, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3be62b76d481a064a9ed4ab1885d0664, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3be62b76d481a064a9ed4ab1885d0664, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1760,7 +1760,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Stikls
+  m_text: Stikla pudeles un burkas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2a768a5c66e6d9247b7cf5888f0e3c9e, type: 2}
   m_sharedMaterial: {fileID: 21100644336755916, guid: 2a768a5c66e6d9247b7cf5888f0e3c9e,
@@ -1830,10 +1830,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 638130644}
-    characterCount: 6
+    characterCount: 24
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 3
+    wordCount: 4
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -2049,10 +2049,10 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Latvian
-    Text: Stikls
+    Text: Stikla pudeles un burkas
     Object: {fileID: 0}
   - Language: English
-    Text: Glass
+    Text: Glass bottles and jars
     Object: {fileID: 0}
 --- !u!1 &680003396
 GameObject:
@@ -2919,15 +2919,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1d2feab92ce04541888398ea29892b4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1d2feab92ce04541888398ea29892b4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1d2feab92ce04541888398ea29892b4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: c1d2feab92ce04541888398ea29892b4, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3353,15 +3353,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b9de7472594a4e246832cd5de0ccb9ec, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b9de7472594a4e246832cd5de0ccb9ec, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b9de7472594a4e246832cd5de0ccb9ec, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: b9de7472594a4e246832cd5de0ccb9ec, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3738,15 +3738,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 939d53335d4960a48a96b1450663275a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 939d53335d4960a48a96b1450663275a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 939d53335d4960a48a96b1450663275a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 939d53335d4960a48a96b1450663275a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4177,15 +4177,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ddcaf55ad3f00f843a0e2a2681ba643e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ddcaf55ad3f00f843a0e2a2681ba643e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ddcaf55ad3f00f843a0e2a2681ba643e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ddcaf55ad3f00f843a0e2a2681ba643e, type: 3}
       propertyPath: m_CastShadows
@@ -4906,6 +4906,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 35.58
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 044a997057cba8b4cbe852ec2a9e9034, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 044a997057cba8b4cbe852ec2a9e9034, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 044a997057cba8b4cbe852ec2a9e9034, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 044a997057cba8b4cbe852ec2a9e9034, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -5396,15 +5408,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dbe6935add76a53439a1a19d1bbaf8d3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dbe6935add76a53439a1a19d1bbaf8d3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dbe6935add76a53439a1a19d1bbaf8d3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: dbe6935add76a53439a1a19d1bbaf8d3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6158,15 +6170,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b5d0ac8042d158d4f8f2977f3c08746a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b5d0ac8042d158d4f8f2977f3c08746a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b5d0ac8042d158d4f8f2977f3c08746a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: b5d0ac8042d158d4f8f2977f3c08746a, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6909,15 +6921,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6280aff38c55f004189de1dcfe1011e0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6280aff38c55f004189de1dcfe1011e0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6280aff38c55f004189de1dcfe1011e0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6280aff38c55f004189de1dcfe1011e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7427,8 +7439,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Pap\u012Brs, kartons, met\u0101ls. Polim\u0113ri - PET pudeles, maisi\u0146i,
-    sadz\u012Bves \u0137\u012Bmija, u.c."
+  m_text: "Pap\u012Brs, PET pudeles, polietil\u0113ns, met\u0101ls"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2a768a5c66e6d9247b7cf5888f0e3c9e, type: 2}
   m_sharedMaterial: {fileID: 21100644336755916, guid: 2a768a5c66e6d9247b7cf5888f0e3c9e,
@@ -7498,12 +7509,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1768451956}
-    characterCount: 79
+    characterCount: 40
     spriteCount: 0
-    spaceCount: 10
-    wordCount: 12
+    spaceCount: 4
+    wordCount: 5
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -7663,12 +7674,10 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Latvian
-    Text: "Pap\u012Brs, kartons, met\u0101ls. Polim\u0113ri - PET pudeles, maisi\u0146i,
-      sadz\u012Bves \u0137\u012Bmija, u.c."
+    Text: "Pap\u012Brs, PET pudeles, polietil\u0113ns, met\u0101ls"
     Object: {fileID: 0}
   - Language: English
-    Text: Paper, cardboard, metal. Polymers - PET bottles, bags, household chemicals,
-      etc.
+    Text: Paper, PET bottles, polyethylene, metal
     Object: {fileID: 0}
 --- !u!1 &1897150015
 GameObject:
@@ -8400,7 +8409,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Plastmasas izstr\u0101d\u0101jumi, p\u0101rtikas iesai\u0146ojumi, keramika"
+  m_text: "Ne\u0161\u0137iroti sadz\u012Bves atkritumi"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2a768a5c66e6d9247b7cf5888f0e3c9e, type: 2}
   m_sharedMaterial: {fileID: 21100644336755916, guid: 2a768a5c66e6d9247b7cf5888f0e3c9e,
@@ -8470,12 +8479,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2063525129}
-    characterCount: 55
+    characterCount: 28
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
