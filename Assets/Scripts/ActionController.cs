@@ -10,6 +10,9 @@ public class ActionController : MonoBehaviour
     public float m_RaycastLength = 10f;
     //private bool m_HasGameInteractable = false;
 
+    public OVRInput.Button m_UserButton = OVRInput.Button.PrimaryTouchpad;
+    public OVRInput.Button m_UserButtonAlt = OVRInput.Button.PrimaryIndexTrigger;
+
     public LayerMask m_InteractableLayerMask = -1;
     public LayerMask m_TrashBinLayerMask = -1;
     public LayerMask m_UIInteractableLayerMask = -1;
@@ -196,11 +199,21 @@ public class ActionController : MonoBehaviour
     {
         UpdatePickupState();
 
-        if (Input.GetButtonDown("Tap"))
+        
+        //if (Input.GetButtonDown("Tap"))
+        //{
+        //    m_UserButtonPressed = true;
+        //}
+        //if (Input.GetButtonUp("Tap"))
+        //{
+        //    m_UserButtonPressed = false;
+        //}
+
+        if (OVRInput.GetDown(m_UserButton) || OVRInput.GetDown(m_UserButtonAlt))
         {
             m_UserButtonPressed = true;
         }
-        if (Input.GetButtonUp("Tap"))
+        if (OVRInput.GetUp(m_UserButton) || OVRInput.GetUp(m_UserButtonAlt))
         {
             m_UserButtonPressed = false;
         }
